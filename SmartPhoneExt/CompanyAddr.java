@@ -1,6 +1,7 @@
-package SmartPhone;
+package SmartPhoneExt;
 
 public class CompanyAddr extends Addr {
+
 
 	private String birthday;
 	private String companyName;

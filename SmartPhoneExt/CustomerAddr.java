@@ -1,6 +1,7 @@
-package SmartPhone;
+package SmartPhoneExt;
 
 public class CustomerAddr extends Addr {
+
 
 	private String birthday;
 	private String customerName;
@@ -63,5 +64,4 @@ public class CustomerAddr extends Addr {
 		
 	}
 
-	
 }

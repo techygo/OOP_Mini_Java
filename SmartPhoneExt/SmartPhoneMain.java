@@ -1,10 +1,11 @@
-package SmartPhone;
+package SmartPhoneExt;
 
 import java.util.Scanner;
 
 public class SmartPhoneMain {
 
 	public static void main(String[] args) {
+		
 		int menu = 0;
 		String searchName = null;
 		
@@ -67,7 +68,14 @@ public class SmartPhoneMain {
 				sp.editAddr(searchName, newAddr);
 				break;
 
-			case 7: 
+			case 7:
+				System.out.print("전화번호 검색할 이름 : ");
+				Scanner showData = new Scanner(System.in);
+				searchName = showData.nextLine();
+				sp.printContact(searchName);
+				break;
+				
+			case 8: 
 				in.close();
 				System.exit(0);		
 				break;
@@ -85,8 +93,10 @@ public class SmartPhoneMain {
 		System.out.println("4. 연락처 검색");
 		System.out.println("5. 연락처 삭제");
 		System.out.println("6. 연락처 수정");
-		System.out.println("7. 프로그램 종료");
+		System.out.println("7. 전화번호 검색");
+		System.out.println("8. 프로그램 종료");
 		System.out.println("--------------------------");
 	}
+
 
 }

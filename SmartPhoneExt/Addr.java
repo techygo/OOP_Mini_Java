@@ -1,6 +1,7 @@
-package SmartPhone;
+package SmartPhoneExt;
 
-public class Addr {
+public class Addr implements ShowData {
+
 
 	private String name;
 	private String phoneNumber;
@@ -67,6 +68,14 @@ public class Addr {
 		System.out.printf("이메일: %s \n", this.email);
 		System.out.printf("주소: %s \n", this.address);
 		System.out.printf("그룹: %s \n", this.group);
+		
+	}
+	
+	@Override
+	public void showData() {
+		
+		System.out.printf("이름: %s \n", this.name);
+		System.out.printf("전화번호: %s \n", this.phoneNumber);
 		
 	}
 

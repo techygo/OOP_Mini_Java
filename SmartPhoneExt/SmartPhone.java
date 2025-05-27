@@ -1,9 +1,8 @@
-package SmartPhone;
+package SmartPhoneExt;
 
 import java.util.Scanner;
 
 public class SmartPhone {
-
 
 	Addr[] Addrs = new Addr[10];
 	int index;
@@ -35,7 +34,6 @@ public class SmartPhone {
 	public CompanyAddr inputCompanyAddr() {
 		
 		Scanner in = new Scanner(System.in);
-//		CompanyAddr cad = new CompanyAddr();
 		
 		System.out.print("이름 : ");
 		String name = in.nextLine();
@@ -177,6 +175,18 @@ public class SmartPhone {
 				
 			}
 		}
+		
+	}
+	
+	
+	public void printContact(String name) {
+		
+		for(int i=0;i<index;i++) {
+			if(name.equals(Addrs[i].getName())) {
+				Addrs[i].showData();				
+			}
+		}
+		System.out.println();
 		
 	}
 
